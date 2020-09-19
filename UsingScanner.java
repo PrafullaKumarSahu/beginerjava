@@ -45,9 +45,10 @@ public class UsingScanner {
 		
 		//Reading content from url
 		try {
-			@SuppressWarnings("resource")
-			String doc = new Scanner(new URL("https://example.net").openStream(), "UTF-8").useDelimiter("\\A").next();
+			Scanner scannerDoc = new Scanner(new URL("https://example.net").openStream(), "UTF-8");
+			String doc = scannerDoc.useDelimiter("\\A").next();
 			System.out.println("Reading example.com: \n" + doc);
+			scannerDoc.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -59,6 +60,7 @@ public class UsingScanner {
 			Scanner scannedFile = new Scanner(file);
 			scannedFile.useDelimiter("\\Z");
 			System.out.println(scannedFile.next());
+			scannedFile.close();
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
