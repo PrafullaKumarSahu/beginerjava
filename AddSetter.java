@@ -10,7 +10,8 @@ package beginerjava;
 
 class Frog {
 	private String name;
-	private int age;
+	private int age; // keeping the properties private 
+	// and using getter, setter helps in encapsulating the original data and allow communication through methods
 	
 	/**
 	 * @return the name
@@ -22,13 +23,13 @@ class Frog {
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
-		this.name = name; //this refers to instance variable
+		this.name = name; //this.name refers to instance variable and name refers to parameter passed
 	}
 	/**
 	 * @return the age
 	 */
 	public int getAge() {
-		return age;
+		return age; // instance is not required, but can be used as this.age
 	}
 	/**
 	 * @param age the age to set
@@ -37,7 +38,7 @@ class Frog {
 		this.age = age;
 	}
 	public void setInfo(String name, int age) {
-		setName(name);
+		setName(name); // instance is not required, but can be written as this.setName(name 
 		setAge(age);
 	}
 }
