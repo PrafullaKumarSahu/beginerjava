@@ -24,6 +24,7 @@ public class App {
 		Plant plant3;
 		plant3.grow();
 		*/ //Type of variable decides what methods can be accessible, but type of object will decide which will be executed.
+		//How reference works vs how object works
 		
 		doGrow(tree);
 	}
