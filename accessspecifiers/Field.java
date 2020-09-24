@@ -7,7 +7,7 @@ package beginerjava.accessspecifiers;
  * @author prafullakumarsahu
  *
  */
-public class Field {
+public class Field extends Plant{
 
 	/**
 	 * 
