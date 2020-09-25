@@ -4,6 +4,7 @@
 package beginerjava.generics;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * @author prafullakumarsahu
@@ -28,5 +29,12 @@ public class Basic {
 		
 		String horse = animals.get(1);
 		System.out.println(horse);
+		
+		//Different types of arguments
+		HashMap <Integer, String> map = new HashMap<Integer, String>();
+		
+		//Java7 style
+		ArrayList<Integer> list = new ArrayList<>();
+		
 	}
 }
