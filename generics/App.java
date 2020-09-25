@@ -29,7 +29,7 @@ public class App {
 		showMessage(animal);
 		showMessage(rabbit);
 		
-		outputMessage(animal); //will not work, but in that case Rabbit specific methods can not be called
+		outputMessage(animal); //will work, but in that case Rabbit specific methods can not be called
 		outputMessage(rabbit);
 	}
 
