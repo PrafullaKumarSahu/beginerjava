@@ -1,7 +1,7 @@
 /**
  * 
  */
-package beginerjava.exceptionthrowing;
+package beginerjava.throwingexception;
 
 /**
  * @author prafullakumarsahu
