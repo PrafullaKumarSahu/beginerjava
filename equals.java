@@ -108,8 +108,8 @@ public class equals {
 		String str1 = "Hello";
 		String str2 = "Hellofadd".substring(0, 5);
 		System.out.println(str2);
-		System.out.println(str1 == str2);
-		System.out.println(str1.equals(str2));
+		System.out.println(str1 == str2); // false - comparing pointing address
+		System.out.println(str1.equals(str2)); // true - comparing value of string
 		
 	}
 
