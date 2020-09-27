@@ -4,6 +4,7 @@
 package beginerjava.trywithresource;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -26,7 +27,7 @@ public class App {
 		}
 		
 		//File reading
-		String filePath = System.getProperty("user.dir") + "//src//beginerjava//trywithresource//file.txt";
+		File filePath = new File(System.getProperty("user.dir") + "//src//beginerjava//trywithresource//file.txt");
 		
 		try(BufferedReader file = new BufferedReader(new FileReader(filePath)))	{
 			String str;
