@@ -22,7 +22,6 @@ public class ReadObjects {
 			for (Person person: People) {
 				System.out.println(person);
 			}
-			os.close();
 			
 			int num = os.readInt();
 			
